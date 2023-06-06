@@ -81,7 +81,7 @@ def search_simple(str1, str2):  # самая сложная функция, ко
 #  Попробуем реализовать этот алгоритм
 
 
-def searh_equal_postfix(s : str):
+def searh_equal_postfix(s : str) -> list[int]:
     pi = [0] * len(s)
     i = 1
     j = 0
@@ -128,7 +128,7 @@ def searh_equal_postfix(s : str):
 
 def search_KMP(pi : list[int],
                str1 : str,
-               str2 : str):
+               str2 : str) -> bool:
     i = 0
     j = 0
     while i != len(str1):
